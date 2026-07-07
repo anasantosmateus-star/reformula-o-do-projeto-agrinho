@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef7ee;
+    color:#333;
+}
+
+/* ===== TELA INICIAL ===== */
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("imagens/capa.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    color:white;
+    width:90%;
+    max-width:700px;
+}
+
+.overlay h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.overlay h2{
+    margin-bottom:20px;
+}
+
+.overlay p{
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+input{
+    width:300px;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    margin-bottom:20px;
+    font-size:16px;
+}
+
+button{
+    padding:14px 30px;
+    border:none;
+    border-radius:10px;
+    background:#2e8b57;
+    color:white;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#256d46;
+    transform:scale(1.05);
+}
+
+/* ===== QUIZ ===== */
+
+#quiz{
+    display:none;
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    padding:40px 0;
+}
+
+section{
+    margin-bottom:50px;
+}
+
+.sobre,
+.resultado,
+.noticias,
+#pergunta{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+#boasVindas{
+    margin-bottom:20px;
+    color:#2e8b57;
+}
+
+.barra{
+    width:100%;
+    height:20px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin:20px 0;
+}
+
+#progresso{
+    width:0%;
+    height:100%;
+    background:#2e8b57;
+    transition:.5s;
+}
+
+#contador{
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+#alternativas{
+    display:grid;
+    gap:15px;
+    margin-top:20px;
+}
+
+#alternativas button{
+    width:100%;
+}
+
+#mensagem{
+    margin-top:20px;
+    font-weight:bold;
+    font-size:18px;
+}
+
+#proxima{
+    display:none;
+    margin-top:25px;
+}
+
+/* ===== NOTÍCIAS ===== */
+
+.card{
+    margin-top:20px;
+    background:#f4fff4;
+    padding:20px;
+    border-left:6px solid green;
+    border-radius:10px;
+}
+
+/* ===== CERTIFICADO ===== */
+
+#certificado{
+    margin-top:20px;
+    background:#f7fff7;
+    border:3px solid green;
+    border-radius:15px;
+    padding:20px;
+}
+
+footer{
+    background:#2e8b57;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ===== CELULAR ===== */
+
+@media(max-width:700px){
+
+.overlay h1{
+font-size:42px;
+}
+
+input{
+width:100%;
+}
+
+button{
+width:100%;
+}
+
+}
